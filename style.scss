@@ -146,13 +146,18 @@
 $font-openSans: 'Open Sans',
 sans-serif;
 $color-reallyDarkGreen: #154734;
+$color-BrightGreen: #046A38;
 
+/**
+HTML + NAVBAR + CARIMAGE WITH INFO
+**/
 html {
     background: #ECECEC;
     height: 100%;
     width: 100%;
 }
 
+//Navbar
 header {
     z-index: 2;
     width: 100%;
@@ -188,7 +193,8 @@ header {
     }
 }
 
-section {
+//Car image with info
+.carImgInfo_section {
     position: relative;
     overflow: hidden;
 
@@ -205,7 +211,7 @@ section {
     .main_info_text {
 
         position: absolute;
-        width: 75%;
+        width: 65%;
         bottom: 0;
         left: 50%;
         transform: translate(-50%);
@@ -219,7 +225,7 @@ section {
 
         text-align: center;
         font-weight: Bold;
-        padding-top: 1rem;
+        padding-top: 1.5rem;
         font-size: 1.5rem;
 
 
@@ -231,20 +237,117 @@ section {
         color: white;
         text-align: center;
         font-size: 1rem;
-        padding: 1rem;
+        padding: 1.2rem;
         line-height: 1.5;
-
     }
-
-
 
 }
 
 
-/** Tablets */
+//Car image with info END
+
+/** MAIN CONTENT **/
+.flexbox-container {
+    display: grid;
+    //border: 4px solid red;
+    grid-template-columns: 1fr 2fr;
+    align-items: center;
+    justify-items: center;
+    padding-bottom: 1rem;
+
+
+    .generalInfo_container {
+        margin-top: 3rem;
+        padding-left: 8rem;
+        padding-right: 10rem;
+        font-family: arial, sans-serif;
+        //border: 4px solid blue;
+
+
+        .infoTitle {
+            background-color: $color-BrightGreen;
+            color: white;
+            padding: 0.7rem 0;
+            padding-left: 0.5rem;
+            margin-bottom: 1rem;
+            font-size: 1.2rem;
+
+            font-weight: 200;
+
+        }
+
+        .paragraphText {
+            font-size: 1.1rem;
+            line-height: 1.6rem;
+            margin-bottom: 1rem;
+        }
+
+
+    }
+
+    .div2 {
+
+        //border: 4px solid green;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+
+        .logga_in_btn {
+
+            color: #FFFFFF;
+            font-family: Arial;
+            font-size: 1.9rem;
+            font-weight: 100;
+            width: 80%;
+            height: 5rem;
+            background-color: #046A38;
+            text-decoration: none;
+            cursor: pointer;
+            text-align: center;
+
+        }
+
+        .logga_in_btn:hover {
+            background: #000000;
+
+            text-decoration: none;
+        }
+
+    }
+
+}
+/** MAIN CONTENT - END **/ 
+
+footer {
+
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    text-align: center;
+    align-items: center;
+    padding: 2rem;
+    //border: 4px solid black;
+    color: white;
+    background-color: #000000;
+    line-height: 1.5rem;
+    font-family: $font-openSans;
+    font-weight: bold;
+
+    img {
+        width: 15%;
+        height: auto;
+    }
+}
+
+/** Smaller screens */
 @media (max-width: 900px) {
 
-    section {
+    .flexbox-container {
+        grid-template-columns: 1fr;
+        padding: 2rem;
+    }
+
+
+    .carImgInfo_section {
 
         .main_info_text {
             width: 100%;

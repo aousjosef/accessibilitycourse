@@ -133,6 +133,9 @@ table {
   border-spacing: 0;
 }
 
+/**
+HTML + NAVBAR + CARIMAGE WITH INFO
+**/
 html {
   background: #ECECEC;
   height: 100%;
@@ -174,49 +177,141 @@ header span {
   font-weight: bold;
 }
 
-section {
+.carImgInfo_section {
   position: relative;
   overflow: hidden;
 }
 
-section .yellowCar_bg_blured {
+.carImgInfo_section .yellowCar_bg_blured {
   width: 100%;
   margin-top: -11px;
   height: auto;
 }
 
-section .main_info_text {
+.carImgInfo_section .main_info_text {
   position: absolute;
-  width: 75%;
+  width: 65%;
   bottom: 0;
   left: 50%;
   -webkit-transform: translate(-50%);
           transform: translate(-50%);
 }
 
-section h1 {
+.carImgInfo_section h1 {
   font-family: "Open Sans", sans-serif;
   background-color: #154734;
   color: white;
   text-align: center;
   font-weight: Bold;
-  padding-top: 1rem;
+  padding-top: 1.5rem;
   font-size: 1.5rem;
 }
 
-section p {
+.carImgInfo_section p {
   font-family: "Open Sans", sans-serif;
   background-color: #154734;
   color: white;
   text-align: center;
   font-size: 1rem;
-  padding: 1rem;
+  padding: 1.2rem;
   line-height: 1.5;
 }
 
-/** Tablets */
+/** MAIN CONTENT **/
+.flexbox-container {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 2fr;
+      grid-template-columns: 1fr 2fr;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  justify-items: center;
+  padding-bottom: 1rem;
+}
+
+.flexbox-container .generalInfo_container {
+  margin-top: 3rem;
+  padding-left: 8rem;
+  padding-right: 10rem;
+  font-family: arial, sans-serif;
+}
+
+.flexbox-container .generalInfo_container .infoTitle {
+  background-color: #046A38;
+  color: white;
+  padding: 0.7rem 0;
+  padding-left: 0.5rem;
+  margin-bottom: 1rem;
+  font-size: 1.2rem;
+  font-weight: 200;
+}
+
+.flexbox-container .generalInfo_container .paragraphText {
+  font-size: 1.1rem;
+  line-height: 1.6rem;
+  margin-bottom: 1rem;
+}
+
+.flexbox-container .div2 {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.flexbox-container .div2 .logga_in_btn {
+  color: #FFFFFF;
+  font-family: Arial;
+  font-size: 1.9rem;
+  font-weight: 100;
+  width: 80%;
+  height: 5rem;
+  background-color: #046A38;
+  text-decoration: none;
+  cursor: pointer;
+  text-align: center;
+}
+
+.flexbox-container .div2 .logga_in_btn:hover {
+  background: #000000;
+  text-decoration: none;
+}
+
+/** MAIN CONTENT - END **/
+footer {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr 1fr;
+      grid-template-columns: 1fr 1fr 1fr;
+  text-align: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 2rem;
+  color: white;
+  background-color: #000000;
+  line-height: 1.5rem;
+  font-family: "Open Sans", sans-serif;
+  font-weight: bold;
+}
+
+footer img {
+  width: 15%;
+  height: auto;
+}
+
+/** Smaller screens */
 @media (max-width: 900px) {
-  section .main_info_text {
+  .flexbox-container {
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+    padding: 2rem;
+  }
+  .carImgInfo_section .main_info_text {
     width: 100%;
   }
 }
