@@ -151,10 +151,16 @@ $color-BrightGreen: #046A38;
 /**
 HTML + NAVBAR + CARIMAGE WITH INFO
 **/
-html {
+body {
     background: #ECECEC;
-    height: 100%;
-    width: 100%;
+    position: relative;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+
+    .main{
+        flex:1;
+    }
 }
 
 //Navbar
@@ -285,7 +291,7 @@ header {
 
     }
 
-    .div2 {
+    .login_container {
 
         //border: 4px solid green;
         width: 100%;
@@ -331,6 +337,7 @@ footer {
     line-height: 1.5rem;
     font-family: $font-openSans;
     font-weight: bold;
+ 
 
     img {
         width: 15%;
@@ -345,12 +352,17 @@ footer {
         grid-template-columns: 1fr;
         padding: 2rem;
     }
-
+   
 
     .carImgInfo_section {
-
+img{
+    display: none;
+}
         .main_info_text {
             width: 100%;
+            position: relative;
         }
     }
+
+
 }

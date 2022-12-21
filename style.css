@@ -136,10 +136,23 @@ table {
 /**
 HTML + NAVBAR + CARIMAGE WITH INFO
 **/
-html {
+body {
   background: #ECECEC;
-  height: 100%;
-  width: 100%;
+  position: relative;
+  min-height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+body .main {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
 }
 
 header {
@@ -253,7 +266,7 @@ header span {
   margin-bottom: 1rem;
 }
 
-.flexbox-container .div2 {
+.flexbox-container .login_container {
   width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -263,7 +276,7 @@ header span {
           justify-content: center;
 }
 
-.flexbox-container .div2 .logga_in_btn {
+.flexbox-container .login_container .logga_in_btn {
   color: #FFFFFF;
   font-family: Arial;
   font-size: 1.9rem;
@@ -276,7 +289,7 @@ header span {
   text-align: center;
 }
 
-.flexbox-container .div2 .logga_in_btn:hover {
+.flexbox-container .login_container .logga_in_btn:hover {
   background: #000000;
   text-decoration: none;
 }
@@ -311,8 +324,12 @@ footer img {
         grid-template-columns: 1fr;
     padding: 2rem;
   }
+  .carImgInfo_section img {
+    display: none;
+  }
   .carImgInfo_section .main_info_text {
     width: 100%;
+    position: relative;
   }
 }
 /*# sourceMappingURL=style.css.map */
