@@ -231,6 +231,45 @@ header span {
 }
 
 /** MAIN CONTENT **/
+.name-container {
+  text-align: right;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 800;
+  line-height: 1.3rem;
+  margin-right: 0.4rem;
+}
+
+nav {
+  text-align: center;
+  margin-top: 1rem;
+}
+
+nav li {
+  list-style: none;
+  background-color: #154734;
+  width: calc(100% /8);
+  padding: 1rem 0.8rem;
+  text-align: center;
+  display: block;
+  margin: 1rem;
+  display: inline-block;
+}
+
+nav li:hover {
+  background-color: black;
+}
+
+nav li:active {
+  background-color: black;
+}
+
+nav li a {
+  text-decoration: none;
+  color: white;
+  text-align: center;
+  font-family: 'Open Sans', sans-serif;
+}
+
 .flexbox-container {
   display: -ms-grid;
   display: grid;
@@ -330,6 +369,18 @@ footer img {
   .carImgInfo_section .main_info_text {
     width: 100%;
     position: relative;
+  }
+  .name-container {
+    text-align: center;
+    margin-top: 1rem;
+  }
+  nav li {
+    padding: 0.8rem;
+    width: calc(100% /3);
+    margin: 0.5rem;
+  }
+  footer img {
+    width: 38%;
   }
 }
 /*# sourceMappingURL=style.css.map */
