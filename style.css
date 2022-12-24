@@ -259,15 +259,15 @@ nav li:hover {
   background-color: black;
 }
 
-nav li:active {
-  background-color: black;
-}
-
 nav li a {
   text-decoration: none;
   color: white;
   text-align: center;
   font-family: 'Open Sans', sans-serif;
+}
+
+nav .active {
+  background-color: black;
 }
 
 .flexbox-container {
@@ -283,10 +283,11 @@ nav li a {
 }
 
 .flexbox-container .generalInfo_container {
-  margin-top: 3rem;
+  margin-top: 1rem;
   padding-left: 8rem;
   padding-right: 10rem;
   font-family: arial, sans-serif;
+  width: 80%;
 }
 
 .flexbox-container .generalInfo_container .infoTitle {
@@ -294,15 +295,17 @@ nav li a {
   color: white;
   padding: 0.7rem 0;
   padding-left: 0.5rem;
-  margin-bottom: 1rem;
+  margin-top: 2rem;
   font-size: 1.2rem;
-  font-weight: 200;
+  font-weight: bold;
 }
 
 .flexbox-container .generalInfo_container .paragraphText {
   font-size: 1.1rem;
   line-height: 1.6rem;
   margin-bottom: 1rem;
+  margin-top: 0.5rem;
+  text-align: justify;
 }
 
 .flexbox-container .login_container {
@@ -378,6 +381,12 @@ footer img {
     padding: 0.8rem;
     width: calc(100% /3);
     margin: 0.5rem;
+  }
+  .generalInfo_container {
+    width: 98% !important;
+  }
+  .generalInfo_container .infoTitle {
+    text-align: center;
   }
   footer img {
     width: 38%;

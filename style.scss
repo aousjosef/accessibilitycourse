@@ -151,6 +151,7 @@ $color-BrightGreen: #046A38;
 /**
 HTML + NAVBAR + CARIMAGE WITH INFO
 **/
+
 body {
     background: #ECECEC;
     position: relative;
@@ -282,14 +283,13 @@ nav {
             margin: 1rem;
             display: inline-block;
             
+            
 
             &:hover {
                 background-color: black;
             }
 
-            &:active {
-                background-color: black;
-            }
+          
          
         a{
             text-decoration: none; 
@@ -300,6 +300,10 @@ nav {
        
          
         }
+    }
+
+    .active{
+        background-color: black;
     }
 
 }
@@ -314,11 +318,12 @@ nav {
 
 
     .generalInfo_container {
-        margin-top: 3rem;
+        margin-top: 1rem;
         padding-left: 8rem;
         padding-right: 10rem;
         font-family: arial, sans-serif;
         //border: 4px solid blue;
+        width: 80%;
 
 
         .infoTitle {
@@ -326,17 +331,21 @@ nav {
             color: white;
             padding: 0.7rem 0;
             padding-left: 0.5rem;
-            margin-bottom: 1rem;
+            margin-top: 2rem;
             font-size: 1.2rem;
-
-            font-weight: 200;
+            font-weight: bold;
 
         }
+
+        
 
         .paragraphText {
             font-size: 1.1rem;
             line-height: 1.6rem;
             margin-bottom: 1rem;
+            margin-top: 0.5rem;
+            text-align: justify;
+           
         }
 
 
@@ -399,6 +408,9 @@ footer {
 /** Smaller screens */
 @media (max-width: 900px) {
 
+
+
+
     .flexbox-container {
         grid-template-columns: 1fr;
         padding: 2rem;
@@ -429,6 +441,14 @@ img{
                 }
 
                 
+            .generalInfo_container {
+
+                  //border: 4px solid blue;
+                 width: 98% !important;
+                 .infoTitle{
+                     text-align: center;
+                 }
+            }
                 footer{
                     img{
                         width: 38%;
