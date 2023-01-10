@@ -1,1 +1,59 @@
-/* No CSS *//*# sourceMappingURL=login_style.css.map */
+.login_main_container {
+  display: flex;
+  justify-content: center;
+}
+.login_main_container .login_box {
+  width: 50%;
+  background-color: white;
+  border-radius: 0.5rem;
+  box-shadow: 1px 7px 10px 0px rgba(0, 0, 0, 0.43);
+  -webkit-box-shadow: 1px 7px 10px 0px rgba(0, 0, 0, 0.43);
+  -moz-box-shadow: 1px 7px 10px 0px rgba(0, 0, 0, 0.43);
+  margin: 2rem 0;
+  padding: 2rem 0;
+  display: flex;
+  flex-direction: column;
+}
+.login_main_container .login_box img {
+  max-width: 50%;
+  height: auto;
+  align-self: center;
+}
+.login_main_container .login_box form {
+  align-self: center;
+  width: 64%;
+}
+.login_main_container .login_box form .inputfield {
+  padding: 0.5rem 0;
+  width: 98%;
+  border: 0.11rem solid black;
+}
+.login_main_container .login_box form .btn_container {
+  width: 100%;
+  text-align: center;
+}
+.login_main_container .login_box form .btn_container button {
+  color: white;
+  width: 97%;
+  margin-top: 0.5rem;
+  margin-bottom: 1rem;
+  padding: 0.6rem 0rem;
+  background-color: #1c784b;
+  font-size: 1.1rem;
+  font-weight: bold;
+  border: 0.1rem solid black;
+  font-family: "open sans";
+}
+.login_main_container .login_box form .btn_container button:hover {
+  background-color: black;
+  cursor: pointer;
+}
+
+@media (max-width: 900px) {
+  .login_box {
+    width: 100% !important;
+  }
+  form {
+    width: 80% !important;
+  }
+}/*# sourceMappingURL=login_style.css.map */

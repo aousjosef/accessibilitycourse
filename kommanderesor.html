@@ -1,173 +1,192 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/style.css">
-    <link rel="stylesheet" href="/table_style.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
-    <script defer src="https://friconix.com/cdn/friconix.js"> </script>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="table_style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap"
+      rel="stylesheet"
+    />
+    <script defer src="https://friconix.com/cdn/friconix.js"></script>
     <title>Kommande resor</title>
-</head>
-<body>
+  </head>
+  <body>
     <header>
-        <a href="/index.html"><img class="top-logo" src="media/malmo_top_logo.png" alt="Malmö stads logga - toppen av sidan"></a>
+      <a href="index.html"
+        ><img
+          class="top-logo"
+          src="media/malmo_top_logo.png"
+          alt="Malmö stads logga - toppen av sidan"
+      /></a>
 
-        <img class="menu_btn" src="media/main_menu_lines.png" alt="meny knapp">
-        <span>Meny</span>
+      <img class="menu_btn" src="media/main_menu_lines.png" alt="meny knapp" />
+      <span>Meny</span>
     </header>
 
     <div class="main">
+      <section class="carImgInfo_section">
+        <div class="overflowhidden">
+          <img
+            class="yellowCar_bg_blured"
+            src="media/car_image_blured.jpg"
+            alt="En gul färdtjänstbil som kör genom en landsväg"
+          />
 
-        <section class="carImgInfo_section">
-            <div class="overflowhidden">
-                <img class="yellowCar_bg_blured" src="media/car_image_blured.jpg"
-                    alt="En gul färdtjänstbil som kör genom en landsväg">
-
-                <div class="main_info_text">
-                    <h1>KOMMANDE RESOR</h1>
-                    <p> Här kan du se dina kommande resor samt återkommande resor. Här kan du enkelt ändra eller avboka din resa.
-                    </p>
-
-                </div>
-            </div>
-        </section>
-
-        <div class="name-container">
-            <h1>
-                Välkommen Erik Berg
-                <br>
-                19880304-1234
-            </h1>
+          <div class="main_info_text">
+            <h1>KOMMANDE RESOR</h1>
+            <p>
+              Här kan du se dina kommande resor samt återkommande resor. Här kan
+              du enkelt ändra eller avboka din resa.
+            </p>
+          </div>
         </div>
+      </section>
 
-        <div class="nav-menu-container">
-            <nav>
-                <ul>
-                    <li><a href="/profile.html">MIN PROFIL</a></li>
-                    <li><a href="/bokaresa.html">BOKA RESA</a></li>
-                    <li class="active"><a href="/kommanderesor.html">KOMMANDE RESOR</a></li>
-                    <li><a href="/tidigareresor.html">TIDIGARE RESOR</a></li>
-                    <li><a href="/synpunkter.html">SYNPUNKTER</a></li>
-                </ul>
-            </nav>
-        </div>
+      <div class="name-container">
+        <h1>
+          Välkommen Erik Berg
+          <br />
+          19880304-1234
+        </h1>
+      </div>
 
-        
-    
-        
-<div class="table-container"> 
-    <h1>Kommande resor</h1>
-    <table>
-<tr>
-<th>Datum och tid</th>
-<th>Från</th>
-<th>Till</th>
-<th>Tillägg</th>
-<th>Ändra</th>
-<th>Avboka</th>
-</tr>
+      <div class="nav-menu-container">
+        <nav>
+          <ul>
+            <li><a href="profile.html">MIN PROFIL</a></li>
+            <li><a href="bokaresa.html">BOKA RESA</a></li>
+            <li class="active">
+              <a href="kommanderesor.html">KOMMANDE RESOR</a>
+            </li>
+            <li><a href="tidigareresor.html">TIDIGARE RESOR</a></li>
+            <li><a href="synpunkter.html">SYNPUNKTER</a></li>
+          </ul>
+        </nav>
+      </div>
 
+      <div class="table-container">
+        <h1>Kommande resor</h1>
+        <table>
+          <tr>
+            <th>Datum och tid</th>
+            <th>Från</th>
+            <th>Till</th>
+            <th>Tillägg</th>
+            <th>Ändra</th>
+            <th>Avboka</th>
+          </tr>
 
-<tr>
-<td>12/12/2022 10:30</td>
-<td>Spångatn 7B, Malmö</td>
-<td>Öresundsvägen 3A, Höör</td>
-<td>Rullstol</td>
-<td><a href="/bokaresa.html"><i class="fi-swsux2-pen icons"></i></a></td>
-<td><i onclick="alert('Resa raderad')" class="fi-cnsux2-times-solid icons"></i></td>
-</tr>
+          <tr>
+            <td>12/12/2022 10:30</td>
+            <td>Spångatn 7B, Malmö</td>
+            <td>Öresundsvägen 3A, Höör</td>
+            <td>Rullstol</td>
+            <td>
+              <a href="bokaresa.html"><i class="fi-swsux2-pen icons"></i></a>
+            </td>
+            <td>
+              <i
+                onclick="alert('Resa raderad')"
+                class="fi-cnsux2-times-solid icons"
+              ></i>
+            </td>
+          </tr>
 
+          <tr>
+            <td>12/12/2022 10:30</td>
+            <td>Spångatn 7B, Malmö</td>
+            <td>Öresundsvägen 3A, Höör</td>
+            <td>Rullstol</td>
+            <td>
+              <a href="bokaresa.html"><i class="fi-swsux2-pen icons"></i></a>
+            </td>
+            <td>
+              <i
+                onclick="alert('Resa raderad')"
+                class="fi-cnsux2-times-solid icons"
+              ></i>
+            </td>
+          </tr>
 
-<tr>
-    <td>12/12/2022 10:30</td>
-    <td>Spångatn 7B, Malmö</td>
-    <td>Öresundsvägen 3A, Höör</td>
-    <td>Rullstol</td>
-    <td><a href="/bokaresa.html"><i class="fi-swsux2-pen icons"></i></a></td>
-    <td><i onclick="alert('Resa raderad')" class="fi-cnsux2-times-solid icons"></i></td>
-    </tr>
+          <tr>
+            <td>12/12/2022 10:30</td>
+            <td>Spångatn 7B, Malmö</td>
+            <td>Öresundsvägen 3A, Höör</td>
+            <td>Rullstol</td>
+            <td>
+              <a href="bokaresa.html"><i class="fi-swsux2-pen icons"></i></a>
+            </td>
+            <td>
+              <i
+                onclick="alert('Resa raderad')"
+                class="fi-cnsux2-times-solid icons"
+              ></i>
+            </td>
+          </tr>
+        </table>
 
+        <h1 class="title2">Återkommande resor</h1>
+        <table>
+          <tr>
+            <th>Datum och tid</th>
+            <th>Från</th>
+            <th>Till</th>
+            <th>Tillägg</th>
+            <th>Ändra</th>
+            <th>Avboka</th>
+          </tr>
 
-    
-<tr>
-    <td>12/12/2022 10:30</td>
-    <td>Spångatn 7B, Malmö</td>
-    <td>Öresundsvägen 3A, Höör</td>
-    <td>Rullstol</td>
-    <td><a href="/bokaresa.html"><i class="fi-swsux2-pen icons"></i></a></td>
-    <td><i onclick="alert('Resa raderad')" class="fi-cnsux2-times-solid icons"></i></td>
-    </tr>
+          <tr>
+            <td>Dagligen (Måndag) 10:30</td>
+            <td>Holmgatan 3B, Malmö</td>
+            <td>Serenadgatan 25, Lund</td>
+            <td>Rullstol</td>
+            <td>
+              <a href="bokaresa.html"><i class="fi-swsux2-pen icons"></i></a>
+            </td>
+            <td>
+              <i
+                onclick="alert('Resa raderad')"
+                class="fi-cnsux2-times-solid icons"
+              ></i>
+            </td>
+          </tr>
+        </table>
+      </div>
 
+      <!-- MAIN DIV END HERE -->
+    </div>
 
-    </table>
+    <footer>
+      <div class="img_footer">
+        <img
+          src="media/malmo_bot_logo.png"
+          alt="Malmo stads logga - botten av sidan"
+        />
+      </div>
 
+      <div>
+        Kontakta oss
+        <br />
+        Telefon: 0700 100 100
+        <br />
+        Postadress: Malmö stad
+        <br />
+        205 80 Malmö
+      </div>
 
-
-    
-
-    <h1 class="title2">Återkommande resor</h1>
-    <table>
-<tr>
-<th>Datum och tid</th>
-<th>Från</th>
-<th>Till</th>
-<th>Tillägg</th>
-<th>Ändra</th>
-<th>Avboka</th>
-</tr>
-
-<tr>
-    <td>Dagligen (Måndag) 10:30</td>
-    <td>Holmgatan 3B, Malmö</td>
-    <td>Serenadgatan 25, Lund</td>
-    <td>Rullstol</td>
-    <td><a href="/bokaresa.html"><i class="fi-swsux2-pen icons"></i></a></td>
-    <td><i onclick="alert('Resa raderad')" class="fi-cnsux2-times-solid icons"></i></td>
-    </tr>
-
-</table>
-
-</div>
-
-
-
-
-
-
-
-
-
-        <!-- MAIN DIV END HERE -->
-        </div>
-       
-        <footer>
-            <div class="img_footer">
-                <img src="media/malmo_bot_logo.png" alt="Malmo stads logga - botten av sidan">
-            </div>
-    
-            <div>
-                Kontakta oss
-                <br>
-                Telefon: 0700 100 100
-                <br>
-                Postadress: Malmö stad
-                <br>
-                205 80 Malmö
-            </div>
-    
-            <div>
-                Öppettider
-                <br>
-                Måndag - Fredag : 06 - 22
-                <br>
-                Helg : 12 - 18
-            </div>
-        </footer>
-
-
-</body>
+      <div>
+        Öppettider
+        <br />
+        Måndag - Fredag : 06 - 22
+        <br />
+        Helg : 12 - 18
+      </div>
+    </footer>
+  </body>
 </html>

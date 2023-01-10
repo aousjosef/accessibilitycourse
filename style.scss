@@ -4,455 +4,409 @@
 */
 
 @mixin cssReset {
+  html,
+  body,
+  div,
+  span,
+  applet,
+  object,
+  iframe,
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6,
+  p,
+  blockquote,
+  pre,
+  a,
+  abbr,
+  acronym,
+  address,
+  big,
+  cite,
+  code,
+  del,
+  dfn,
+  em,
+  img,
+  ins,
+  kbd,
+  q,
+  s,
+  samp,
+  small,
+  strike,
+  strong,
+  sub,
+  sup,
+  tt,
+  var,
+  b,
+  u,
+  i,
+  center,
+  dl,
+  dt,
+  dd,
+  ol,
+  ul,
+  li,
+  fieldset,
+  form,
+  label,
+  legend,
+  table,
+  caption,
+  tbody,
+  tfoot,
+  thead,
+  tr,
+  th,
+  td,
+  article,
+  aside,
+  canvas,
+  details,
+  embed,
+  figure,
+  figcaption,
+  footer,
+  header,
+  hgroup,
+  menu,
+  nav,
+  output,
+  ruby,
+  section,
+  summary,
+  time,
+  mark,
+  audio,
+  video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+  }
 
-    html,
-    body,
-    div,
-    span,
-    applet,
-    object,
-    iframe,
-    h1,
-    h2,
-    h3,
-    h4,
-    h5,
-    h6,
-    p,
-    blockquote,
-    pre,
-    a,
-    abbr,
-    acronym,
-    address,
-    big,
-    cite,
-    code,
-    del,
-    dfn,
-    em,
-    img,
-    ins,
-    kbd,
-    q,
-    s,
-    samp,
-    small,
-    strike,
-    strong,
-    sub,
-    sup,
-    tt,
-    var,
-    b,
-    u,
-    i,
-    center,
-    dl,
-    dt,
-    dd,
-    ol,
-    ul,
-    li,
-    fieldset,
-    form,
-    label,
-    legend,
-    table,
-    caption,
-    tbody,
-    tfoot,
-    thead,
-    tr,
-    th,
-    td,
-    article,
-    aside,
-    canvas,
-    details,
-    embed,
-    figure,
-    figcaption,
-    footer,
-    header,
-    hgroup,
-    menu,
-    nav,
-    output,
-    ruby,
-    section,
-    summary,
-    time,
-    mark,
-    audio,
-    video {
-        margin: 0;
-        padding: 0;
-        border: 0;
-        font-size: 100%;
-        font: inherit;
-        vertical-align: baseline;
-    }
+  /* HTML5 display-role reset for older browsers */
+  article,
+  aside,
+  details,
+  figcaption,
+  figure,
+  footer,
+  header,
+  hgroup,
+  menu,
+  nav,
+  section {
+    display: block;
+  }
 
-    /* HTML5 display-role reset for older browsers */
-    article,
-    aside,
-    details,
-    figcaption,
-    figure,
-    footer,
-    header,
-    hgroup,
-    menu,
-    nav,
-    section {
-        display: block;
-    }
+  body {
+    line-height: 1;
+  }
 
-    body {
-        line-height: 1;
-    }
+  ol,
+  ul {
+    list-style: none;
+  }
 
-    ol,
-    ul {
-        list-style: none;
-    }
+  blockquote,
+  q {
+    quotes: none;
+  }
 
-    blockquote,
-    q {
-        quotes: none;
-    }
+  blockquote:before,
+  blockquote:after,
+  q:before,
+  q:after {
+    content: "";
+    content: none;
+  }
 
-    blockquote:before,
-    blockquote:after,
-    q:before,
-    q:after {
-        content: '';
-        content: none;
-    }
-
-    table {
-        border-collapse: collapse;
-        border-spacing: 0;
-    }
-
+  table {
+    border-collapse: collapse;
+    border-spacing: 0;
+  }
 }
 
 @include cssReset;
 
-
-
-
-$font-openSans: 'Open Sans',
-sans-serif;
+$font-openSans: "Open Sans", sans-serif;
 $color-reallyDarkGreen: #154734;
-$color-BrightGreen: #046A38;
+$color-BrightGreen: #046a38;
 
 /**
 HTML + NAVBAR + CARIMAGE WITH INFO
 **/
 
 body {
-    background: #ECECEC;
-    position: relative;
-    min-height: 100vh;
-    display: flex;
-    flex-direction: column;
+  background: #ececec;
+  position: relative;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
 
-    .main{
-        flex:1;
-    }
+  .main {
+    flex: 1;
+  }
 }
 
 //Navbar
 header {
-    z-index: 2;
-    width: 100%;
-    background-color: black;
-    overflow: hidden;
+  z-index: 2;
+  width: 100%;
+  background-color: black;
+  overflow: hidden;
 
-    .top-logo {
-        max-width: 37%;
-        height: auto;
-        margin-left: 3rem;
-        margin-top: 0.3rem;
-        margin-bottom: 0.3rem;
-        padding-bottom: 0.4rem;
-    }
+  .top-logo {
+    max-width: 37%;
+    height: auto;
+    margin-left: 3rem;
+    margin-top: 0.3rem;
+    margin-bottom: 0.3rem;
+    padding-bottom: 0.4rem;
+  }
 
-    .menu_btn {
-        max-width: 5%;
-        max-height: auto;
-        float: right;
-        margin-top: 1.57rem;
-        margin-right: 0.9rem;
-        padding-bottom: 1rem;
-    }
+  .menu_btn {
+    max-width: 5%;
+    max-height: auto;
+    float: right;
+    margin-top: 1.57rem;
+    margin-right: 0.9rem;
+    padding-bottom: 1rem;
+  }
 
-    span {
-        color: white;
-        float: right;
-        margin-right: 0.5rem;
-        margin-top: 1.65rem;
-        font-size: 1.5rem;
-        font-family: $font-openSans;
-        font-weight: bold;
-    }
+  span {
+    color: white;
+    float: right;
+    margin-right: 0.5rem;
+    margin-top: 1.65rem;
+    font-size: 1.5rem;
+    font-family: $font-openSans;
+    font-weight: bold;
+  }
 }
 
 //Car image with info
 .carImgInfo_section {
-    position: relative;
-    overflow: hidden;
+  position: relative;
+  overflow: hidden;
 
+  .yellowCar_bg_blured {
+    width: 100%;
+    margin-top: -11px;
+    height: auto;
+  }
 
-    .yellowCar_bg_blured {
+  .main_info_text {
+    position: absolute;
+    width: 65%;
+    bottom: 0;
+    left: 50%;
+    transform: translate(-50%);
+  }
 
-        width: 100%;
-        margin-top: -11px;
-        height: auto;
+  h1 {
+    font-family: $font-openSans;
+    background-color: $color-reallyDarkGreen;
+    color: white;
 
+    text-align: center;
+    font-weight: Bold;
+    padding-top: 1.5rem;
+    font-size: 1.5rem;
+  }
 
-    }
-
-    .main_info_text {
-
-        position: absolute;
-        width: 65%;
-        bottom: 0;
-        left: 50%;
-        transform: translate(-50%);
-
-    }
-
-    h1 {
-        font-family: $font-openSans;
-        background-color: $color-reallyDarkGreen;
-        color: white;
-
-        text-align: center;
-        font-weight: Bold;
-        padding-top: 1.5rem;
-        font-size: 1.5rem;
-
-
-    }
-
-    p {
-        font-family: $font-openSans;
-        background-color: $color-reallyDarkGreen;
-        color: white;
-        text-align: center;
-        font-size: 1rem;
-        padding: 1.2rem;
-        line-height: 1.5;
-    }
-
+  p {
+    font-family: $font-openSans;
+    background-color: $color-reallyDarkGreen;
+    color: white;
+    text-align: center;
+    font-size: 1rem;
+    padding: 1.2rem;
+    line-height: 1.5;
+  }
 }
-
 
 //Car image with info END
 
 /** MAIN CONTENT **/
 
 .name-container {
-    
-    text-align: right;
-    font-family: 'Open Sans', sans-serif;
-    font-weight: 800;
-    line-height: 1.3rem;
-    margin-right: 0.4rem;
+  text-align: right;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 800;
+  line-height: 1.3rem;
+  margin-right: 0.4rem;
 }
 
-
-
 nav {
-    // border: 4px solid green;
+  // border: 4px solid green;
+  text-align: center;
+  margin-top: 1rem;
+
+  li {
+    list-style: none;
+    background-color: #154734;
+    width: calc(100% / 8);
+    padding: 1rem 0.8rem;
     text-align: center;
-    margin-top: 1rem;
+    display: block;
 
-    li {
-    
-            list-style: none;
-            background-color:#154734;
-            width: calc(100% /8);
-            padding:1rem 0.8rem;
-            text-align: center;
-            display: block;
-          
-            margin: 1rem;
-            display: inline-block;
-            
-            
+    margin: 1rem;
+    display: inline-block;
 
-            &:hover {
-                background-color: black;
-            }
-
-          
-         
-        a{
-            text-decoration: none; 
-            color: white;
-            text-align: center;
-        font-family: 'Open Sans', sans-serif;
-      
-       
-         
-        }
+    &:hover {
+      background-color: black;
     }
 
-    .active{
-        background-color: black;
+    a {
+      text-decoration: none;
+      color: white;
+      text-align: center;
+      font-family: "Open Sans", sans-serif;
     }
+  }
 
+  .active {
+    background-color: black;
+  }
 }
 
 .flexbox-container {
-    display: grid;
-    //border: 4px solid red;
-    grid-template-columns: 1fr 2fr;
-    align-items: center;
-    justify-items: center;
-    padding-bottom: 1rem;
+  display: grid;
+  //border: 4px solid red;
+  grid-template-columns: 1fr 2fr;
+  align-items: center;
+  justify-items: center;
+  padding-bottom: 1rem;
 
+  .generalInfo_container {
+    margin-top: 1rem;
 
-    .generalInfo_container {
-        margin-top: 1rem;
-        padding-left: 8rem;
-        padding-right: 10rem;
-        font-family: arial, sans-serif;
-        //border: 4px solid blue;
-        width: 80%;
+    font-family: arial, sans-serif;
+    //border: 4px solid blue;
+    width: 80%;
 
-
-        .infoTitle {
-            background-color: $color-BrightGreen;
-            color: white;
-            padding: 0.7rem 0;
-            padding-left: 0.5rem;
-            margin-top: 2rem;
-            font-size: 1.2rem;
-            font-weight: bold;
-
-        }
-
-        
-
-        .paragraphText {
-            font-size: 1.1rem;
-            line-height: 1.6rem;
-            margin-bottom: 1rem;
-            margin-top: 0.5rem;
-            text-align: justify;
-           
-        }
-
-
+    .infoTitle {
+      background-color: $color-BrightGreen;
+      color: white;
+      padding: 0.7rem 0;
+      padding-left: 0.5rem;
+      margin-top: 2rem;
+      font-size: 1.2rem;
+      font-weight: bold;
     }
 
-    .login_container {
+    .paragraphText {
+      font-size: 1.1rem;
+      line-height: 1.6rem;
+      margin-bottom: 1rem;
+      margin-top: 0.5rem;
+      text-align: justify;
+    }
+  }
 
-        //border: 4px solid green;
-        width: 100%;
-        display: flex;
-        justify-content: center;
+  .login_container {
+    //border: 4px solid green;
+    width: 100%;
+    display: flex;
+    justify-content: center;
 
-        .logga_in_btn {
-
-            color: #FFFFFF;
-            font-family: Arial;
-            font-size: 1.9rem;
-            font-weight: 100;
-            width: 80%;
-            height: 5rem;
-            background-color: #046A38;
-            text-decoration: none;
-            cursor: pointer;
-            text-align: center;
-
-        }
-
-        .logga_in_btn:hover {
-            background: #000000;
-
-            text-decoration: none;
-        }
-
+    .logga_in_btn {
+      color: #ffffff;
+      font-family: Arial;
+      font-size: 1.9rem;
+      font-weight: 100;
+      width: 80%;
+      height: 5rem;
+      background-color: #046a38;
+      text-decoration: none;
+      cursor: pointer;
+      text-align: center;
     }
 
+    .logga_in_btn:hover {
+      background: #000000;
+
+      text-decoration: none;
+    }
+  }
 }
-/** MAIN CONTENT - END **/ 
+/** MAIN CONTENT - END **/
 
 footer {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  text-align: center;
+  align-items: center;
+  padding: 2rem;
+  //border: 4px solid black;
+  color: white;
+  background-color: #000000;
+  line-height: 1.5rem;
+  font-family: $font-openSans;
+  font-weight: bold;
 
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    text-align: center;
-    align-items: center;
-    padding: 2rem;
-    //border: 4px solid black;
-    color: white;
-    background-color: #000000;
-    line-height: 1.5rem;
-    font-family: $font-openSans;
-    font-weight: bold;
- 
-
-    img {
-        width: 15%;
-        height: auto;
-    }
+  img {
+    width: 15%;
+    height: auto;
+  }
 }
 
 /** Smaller screens */
 @media (max-width: 900px) {
+  .flexbox-container {
+    grid-template-columns: 1fr;
+    padding: 2rem;
+  }
 
-
-
-
-    .flexbox-container {
-        grid-template-columns: 1fr;
-        padding: 2rem;
+  .carImgInfo_section {
+    img {
+      display: none;
     }
-   
+    .main_info_text {
+      width: 100%;
+      position: relative;
+    }
+  }
 
-    .carImgInfo_section {
-img{
-    display: none;
+  .name-container {
+    text-align: center;
+    margin-top: 1rem;
+  }
+
+  nav {
+    li {
+      padding: 0.8rem;
+      width: calc(100% / 3);
+      margin: 0.5rem;
+    }
+  }
+
+  .generalInfo_container {
+    //border: 4px solid blue;
+    width: 98% !important;
+    .infoTitle {
+      text-align: center;
+    }
+  }
+  footer {
+    img {
+      width: 38%;
+    }
+  }
 }
-        .main_info_text {
-            width: 100%;
-            position: relative;
-        }
-    }
 
-    .name-container {
-        text-align: center;
-        margin-top: 1rem;
-                   }
-        
-                nav {
-                    li {
-                        padding: 0.8rem;
-                        width: calc(100% /3);
-                        margin:0.5rem;
-                    }
-                }
+//_________________________ Synpunkter css
 
-                
-            .generalInfo_container {
-
-                  //border: 4px solid blue;
-                 width: 98% !important;
-                 .infoTitle{
-                     text-align: center;
-                 }
-            }
-                footer{
-                    img{
-                        width: 38%;
-                    }
-                }
-
+.synpunkter {
+  grid-template-columns: 1fr;
 }
