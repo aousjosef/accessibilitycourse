@@ -1,20 +1,30 @@
 .profile-form-container {
+  display: -ms-grid;
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
   font-family: "Open Sans", sans-serif;
   padding: 2rem 0rem;
 }
+
 .profile-form-container .labelstyle {
   font-size: 1.25rem;
   font-weight: bold;
 }
+
 .profile-form-container .left-side-profile-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
+
 .profile-form-container .left-side-profile-container form {
   width: 65%;
 }
+
 .profile-form-container .left-side-profile-container input {
   width: 97%;
   margin-top: 0.5rem;
@@ -24,27 +34,38 @@
   font-size: 1.1rem;
   font-weight: bold;
 }
+
 .profile-form-container .left-side-profile-container label {
   font-size: 1.25rem;
   font-weight: bold;
 }
 
 .right-side-profile-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: center;
-  align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
+
 .right-side-profile-container label {
   font-size: 1.25rem;
   font-weight: bold;
 }
+
 .right-side-profile-container .right-side-flex-container {
   width: 65%;
 }
+
 .right-side-profile-container .right-side-flex-container #returresa-radio-container {
   display: none;
   margin-top: 1rem;
 }
+
 .right-side-profile-container .right-side-flex-container #returresa-radio-container input {
   width: 97%;
   margin-top: 0.5rem;
@@ -54,6 +75,7 @@
   font-size: 1.1rem;
   font-weight: bold;
 }
+
 .right-side-profile-container .right-side-flex-container textarea,
 .right-side-profile-container .right-side-flex-container select {
   width: 98%;
@@ -62,22 +84,27 @@
   margin-top: 0.5rem;
   padding: 0.5rem 0rem;
 }
+
 .right-side-profile-container fieldset {
   font-size: 1.25rem;
   font-weight: bold;
 }
+
 .right-side-profile-container fieldset legend {
   padding: 1rem 0rem;
 }
+
 .right-side-profile-container label,
 .right-side-profile-container input {
   margin: 0.5rem 0;
   font-size: 1.1rem;
 }
+
 .right-side-profile-container .labelstyle {
   font-size: 1.25rem;
   font-weight: bold;
 }
+
 .right-side-profile-container button {
   text-align: center;
   width: 98%;
@@ -87,6 +114,7 @@
   color: white;
   background-color: #046a38;
 }
+
 .right-side-profile-container button:hover {
   background-color: black;
   cursor: pointer;
@@ -94,10 +122,12 @@
 
 @media (max-width: 900px) {
   .right-side-flex-container,
-form {
+  form {
     width: 85% !important;
   }
   .profile-form-container {
-    grid-template-columns: 1fr;
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
   }
-}/*# sourceMappingURL=bokaresa_style.css.map */
+}
+/*# sourceMappingURL=bokaresa_style.css.map */

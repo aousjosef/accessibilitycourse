@@ -140,11 +140,19 @@ body {
   background: #ececec;
   position: relative;
   min-height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
+
 body .main {
-  flex: 1;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
 }
 
 header {
@@ -153,6 +161,7 @@ header {
   background-color: black;
   overflow: hidden;
 }
+
 header .top-logo {
   max-width: 37%;
   height: auto;
@@ -161,6 +170,7 @@ header .top-logo {
   margin-bottom: 0.3rem;
   padding-bottom: 0.4rem;
 }
+
 header .menu_btn {
   max-width: 5%;
   max-height: auto;
@@ -169,6 +179,7 @@ header .menu_btn {
   margin-right: 0.9rem;
   padding-bottom: 1rem;
 }
+
 header span {
   color: white;
   float: right;
@@ -183,18 +194,22 @@ header span {
   position: relative;
   overflow: hidden;
 }
+
 .carImgInfo_section .yellowCar_bg_blured {
   width: 100%;
   margin-top: -11px;
   height: auto;
 }
+
 .carImgInfo_section .main_info_text {
   position: absolute;
   width: 65%;
   bottom: 0;
   left: 50%;
-  transform: translate(-50%);
+  -webkit-transform: translate(-50%);
+          transform: translate(-50%);
 }
+
 .carImgInfo_section h1 {
   font-family: "Open Sans", sans-serif;
   background-color: #154734;
@@ -204,6 +219,7 @@ header span {
   padding-top: 1.5rem;
   font-size: 1.5rem;
 }
+
 .carImgInfo_section p {
   font-family: "Open Sans", sans-serif;
   background-color: #154734;
@@ -212,6 +228,12 @@ header span {
   font-size: 1rem;
   padding: 1.2rem;
   line-height: 1.5;
+}
+
+.max-width-container {
+  max-width: 90rem;
+  width: 96%;
+  margin: 0 auto;
 }
 
 /** MAIN CONTENT **/
@@ -227,41 +249,53 @@ nav {
   text-align: center;
   margin-top: 1rem;
 }
+
 nav li {
   list-style: none;
   background-color: #154734;
-  width: 12.5%;
+  width: calc(100% / 4);
   padding: 1rem 0.8rem;
   text-align: center;
-  display: block;
   margin: 1rem;
   display: inline-block;
 }
+
 nav li:hover {
   background-color: black;
 }
+
 nav li a {
   text-decoration: none;
   color: white;
   text-align: center;
   font-family: "Open Sans", sans-serif;
+  display: block;
 }
+
 nav .active {
   background-color: black;
 }
 
 .flexbox-container {
+  display: -ms-grid;
   display: grid;
-  grid-template-columns: 1fr 2fr;
-  align-items: center;
+  -ms-grid-columns: 1fr;
+      grid-template-columns: 1fr;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   justify-items: center;
   padding-bottom: 1rem;
+  max-width: 80rem;
+  margin: 0 auto;
 }
+
 .flexbox-container .generalInfo_container {
   margin-top: 1rem;
   font-family: arial, sans-serif;
   width: 80%;
 }
+
 .flexbox-container .generalInfo_container .infoTitle {
   background-color: #046a38;
   color: white;
@@ -271,6 +305,7 @@ nav .active {
   font-size: 1.2rem;
   font-weight: bold;
 }
+
 .flexbox-container .generalInfo_container .paragraphText {
   font-size: 1.1rem;
   line-height: 1.6rem;
@@ -278,23 +313,31 @@ nav .active {
   margin-top: 0.5rem;
   text-align: justify;
 }
+
 .flexbox-container .login_container {
   width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 2rem 0;
 }
+
 .flexbox-container .login_container .logga_in_btn {
   color: #ffffff;
   font-family: Arial;
   font-size: 1.9rem;
   font-weight: 100;
-  width: 80%;
-  height: 5rem;
+  width: 45%;
   background-color: #046a38;
   text-decoration: none;
   cursor: pointer;
   text-align: center;
+  padding: 2rem;
 }
+
 .flexbox-container .login_container .logga_in_btn:hover {
   background: #000000;
   text-decoration: none;
@@ -302,10 +345,14 @@ nav .active {
 
 /** MAIN CONTENT - END **/
 footer {
+  display: -ms-grid;
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
+  -ms-grid-columns: 1fr 1fr 1fr 1fr;
+      grid-template-columns: 1fr 1fr 1fr 1fr;
   text-align: center;
-  align-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   padding: 2rem;
   color: white;
   background-color: #000000;
@@ -313,6 +360,12 @@ footer {
   font-family: "Open Sans", sans-serif;
   font-weight: bold;
 }
+
+footer a {
+  color: white;
+  text-decoration: none;
+}
+
 footer img {
   width: 15%;
   height: auto;
@@ -321,8 +374,12 @@ footer img {
 /** Smaller screens */
 @media (max-width: 900px) {
   .flexbox-container {
-    grid-template-columns: 1fr;
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
     padding: 2rem;
+  }
+  .flexbox-container .logga_in_btn {
+    width: 100% !important;
   }
   .carImgInfo_section img {
     display: none;
@@ -337,7 +394,7 @@ footer img {
   }
   nav li {
     padding: 0.8rem;
-    width: 33.3333333333%;
+    width: calc(100% / 2);
     margin: 0.5rem;
   }
   .generalInfo_container {
@@ -346,10 +403,18 @@ footer img {
   .generalInfo_container .infoTitle {
     text-align: center;
   }
+  footer {
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+    gap: 2rem;
+  }
   footer img {
     width: 38%;
   }
 }
+
 .synpunkter {
-  grid-template-columns: 1fr;
-}/*# sourceMappingURL=style.css.map */
+  -ms-grid-columns: 1fr;
+      grid-template-columns: 1fr;
+}
+/*# sourceMappingURL=style.css.map */

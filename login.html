@@ -1,123 +1,106 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="style.css" />
-    <link rel="stylesheet" href="login_style.css" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap"
-      rel="stylesheet"
-    />
-    <title>Logga in</title>
-  </head>
-  <body>
-    <header>
-      <a href="index.html"
-        ><img
-          class="top-logo"
-          src="media/malmo_top_logo.png"
-          alt="Malmö stads logga - toppen av sidan"
-      /></a>
 
-      <img class="menu_btn" src="media/main_menu_lines.png" alt="meny knapp" />
-      <span>Meny</span>
-    </header>
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="login_style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet" />
+  <title>Logga in</title>
+</head>
 
-    <div class="main">
-      <section class="carImgInfo_section">
-        <div class="overflowhidden">
-          <img
-            class="yellowCar_bg_blured"
-            src="media/car_image_blured.jpg"
-            alt="En gul färdtjänstbil som kör genom en landsväg"
-          />
+<body>
+  <header>
+    <a href="index.html"><img class="top-logo" src="media/malmo_top_logo.png"
+        alt="Malmö stads logga - toppen av sidan" /></a>
 
-          <div class="main_info_text">
-            <h1>INLOGGNING</h1>
-            <p>
-              Mina sidor är dina personliga sidor på vår webbplats. Du loggar in
-              med ditt kundnummer. Ditt lösenord är de fyra sista siffrorna i
-              ditt person- eller organisationsnummer, eller det lösnord du fått
-              ifrån oss.
-            </p>
-          </div>
-        </div>
-      </section>
+    <img class="menu_btn" src="media/main_menu_lines.png" alt="meny knapp" />
+    <span>Meny</span>
+  </header>
 
-      <div class="login_main_container">
-        <div class="login_box">
-          <img src="media/malmo_login_logo.jpg" alt="malmo stad" />
+  <div class="main">
+    <section class="carImgInfo_section">
+      <div class="overflowhidden">
+        <img class="yellowCar_bg_blured" src="media/car_image_blured.jpg"
+          alt="En gul färdtjänstbil som kör genom en landsväg" />
 
-          <form action="profile.html">
-            <label for="personalnumber">Personnummer:</label>
-            <br />
-            <input
-              class="inputfield"
-              type="text"
-              inputmode="numeric"
-              name="personalnumber"
-              placeholder="19850907XXXX"
-              id="personalnumber"
-            />
-            <br />
-            <br />
-            <label for="password">Lösenord:</label>
-            <br />
-            <input
-              id="password"
-              class="inputfield"
-              type="password"
-              name="password"
-            />
-            <br />
-
-            <label for="rememberme">Kom ihåg mig </label>
-            <input id="rememberme" type="checkbox" name="rememberme" />
-            <br />
-            <br />
-
-            <div class="btn_container">
-              <button>LOGGA IN</button>
-              <br />
-              <button>SKAPA KONTO</button>
-            </div>
-          </form>
+        <div class="main_info_text">
+          <h1>INLOGGNING</h1>
+          <p>
+            Mina sidor är dina personliga sidor på vår webbplats. Du loggar in
+            med ditt kundnummer. Ditt lösenord är de fyra sista siffrorna i
+            ditt person- eller organisationsnummer, eller det lösnord du fått
+            ifrån oss.
+          </p>
         </div>
       </div>
+    </section>
 
-      <!-- MAIN DIV ENDS HERE -->
+    <div class="login_main_container">
+      <div class="login_box">
+        <img src="media/malmo_login_logo.jpg" alt="malmo stad" />
+
+        <form action="profile.html">
+          <label for="personalnumber">Personnummer:</label>
+          <br />
+          <input class="inputfield" type="text" inputmode="numeric" name="personalnumber" placeholder="19850907XXXX"
+            id="personalnumber" />
+          <br />
+          <br />
+          <label for="password">Lösenord:</label>
+          <br />
+          <input id="password" class="inputfield" type="password" name="password" />
+          <br />
+
+          <label for="rememberme">Kom ihåg mig </label>
+          <input id="rememberme" type="checkbox" name="rememberme" />
+          <br />
+          <br />
+
+          <div class="btn_container">
+            <button>LOGGA IN</button>
+            <br />
+            <button>SKAPA KONTO</button>
+          </div>
+        </form>
+      </div>
     </div>
 
-    <footer>
-      <div class="img_footer">
-        <img
-          src="media/malmo_bot_logo.png"
-          alt="Malmo stads logga - botten av sidan"
-        />
-      </div>
+    <!-- MAIN DIV ENDS HERE -->
+  </div>
 
-      <div>
-        Kontakta oss
-        <br />
-        Telefon: 0700 100 100
-        <br />
-        Postadress: Malmö stad
-        <br />
-        205 80 Malmö
-      </div>
+  <footer>
+    <div class="img_footer">
+      <img src="media/malmo_bot_logo.png" alt="Malmo stads logga - botten av sidan" />
+    </div>
 
-      <div>
-        Öppettider
-        <br />
-        Måndag - Fredag : 06 - 22
-        <br />
-        Helg : 12 - 18
-      </div>
-    </footer>
-  </body>
+    <div>
+      Kontakta oss
+      <br />
+      Telefon: 0700 100 100
+      <br />
+      Postadress: Malmö stad
+      <br />
+      205 80 Malmö
+    </div>
+
+    <div>
+      Öppettider
+      <br />
+      Måndag - Fredag : 06 - 22
+      <br />
+      Helg : 12 - 18
+    </div>
+    <div>
+      <a href="synpunkter.html"> Tillgänglighetsredogörelse </a>
+
+    </div>
+  </footer>
+</body>
+
 </html>

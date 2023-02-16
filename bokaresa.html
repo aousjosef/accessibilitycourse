@@ -1,74 +1,71 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="style.css" />
-    <link rel="stylesheet" href="bokaresa_style.css" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap"
-      rel="stylesheet"
-    />
-    <title>Boka resa</title>
-  </head>
 
-  <body>
-    <header>
-      <a href="index.html"
-        ><img
-          class="top-logo"
-          src="media/malmo_top_logo.png"
-          alt="Malmö stads logga - toppen av sidan"
-      /></a>
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="bokaresa_style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet" />
+  <script defer src="https://friconix.com/cdn/friconix.js"></script>
+  <title>Boka resa</title>
+</head>
 
-      <img class="menu_btn" src="media/main_menu_lines.png" alt="meny knapp" />
-      <span>Meny</span>
-    </header>
+<body>
+  <header>
+    <a href="index.html"><img class="top-logo" src="media/malmo_top_logo.png"
+        alt="Malmö stads logga - toppen av sidan" /></a>
 
-    <div class="main">
-      <section class="carImgInfo_section">
-        <div class="overflowhidden">
-          <img
-            class="yellowCar_bg_blured"
-            src="media/car_image_blured.jpg"
-            alt="En gul färdtjänstbil som kör genom en landsväg"
-          />
+    <img class="menu_btn" src="media/main_menu_lines.png" alt="meny knapp" />
+    <span>Meny</span>
+  </header>
 
-          <div class="main_info_text">
-            <h1>BOKA NY RESA</h1>
-            <p>
-              Här kan du boka din kommande resa. Säg till att fylla i all
-              nödvändig information, en bekräftlse på resan kommera att skickas
-              till dig som SMS. Resespecifikation skickas till din e-post.
-            </p>
-          </div>
+  <div class="main">
+    <section class="carImgInfo_section">
+      <div class="overflowhidden">
+        <img class="yellowCar_bg_blured" src="media/car_image_blured.jpg"
+          alt="En gul färdtjänstbil som kör genom en landsväg" />
+
+        <div class="main_info_text">
+          <h1>BOKA NY RESA</h1>
+          <p>
+            Här kan du boka din kommande resa. Säg till att fylla i all
+            nödvändig information, en bekräftlse på resan kommera att skickas
+            till dig som SMS. Resespecifikation skickas till din e-post.
+          </p>
         </div>
-      </section>
-
-      <div class="name-container">
-        <h1>
-          Välkommen Erik Berg
-          <br />
-          19880304-1234
-        </h1>
       </div>
+    </section>
 
+    <div class="name-container">
+      <h1>
+        Välkommen Erik Berg
+        <br />
+        19880304-1234
+      </h1>
+    </div>
+    <div class="max-width-container">
       <div class="nav-menu-container">
         <nav>
           <ul>
-            <li><a href="profile.html">MIN PROFIL</a></li>
-            <li class="active"><a href="bokaresa.html">BOKA RESA</a></li>
-            <li><a href="kommanderesor.html">KOMMANDE RESOR</a></li>
-            <li><a href="tidigareresor.html">TIDIGARE RESOR</a></li>
-            <li><a href="synpunkter.html">SYNPUNKTER</a></li>
+
+            <li><a href="profile.html"><i class="fi-xnsuxl-user-solid"></i> MIN PROFIL</a></li>
+
+            <li class="active"><a href="bokaresa.html"><i class="fi-xnsuxl-car-front"></i> BOKA RESA</a></li>
+            <li><a href="kommanderesor.html"> <i class="fi-cnsuhl-clock-solid"></i> KOMMANDE RESOR</a></li>
+            <li><a href="tidigareresor.html"> <i class="fi-xnsuxl-deadline-solid"></i> TIDIGARE RESOR</a></li>
+            <li><a href="synpunkter.html"> <i class="fi-cnsdxl-exclamation-mark"></i> TILLGÄNGLIGHETSREDOGÖRELSE</a>
+            </li>
           </ul>
         </nav>
       </div>
 
       <!-- PAGE MAIN CONTENT START HERE -->
+
+
 
       <div class="profile-form-container">
         <div class="left-side-profile-container">
@@ -100,20 +97,10 @@
               <legend>
                 Kryssa i om följande alternativ är relevanta för din resa
               </legend>
-              <input
-                type="checkbox"
-                name="travelhelp"
-                id="companion"
-                value="companion"
-              />
+              <input type="checkbox" name="travelhelp" id="companion" value="companion" />
               <label for="companion">Medresenär</label>
               <br />
-              <input
-                type="checkbox"
-                name="travelhelp"
-                id="wheelchair"
-                value="wheelchair"
-              />
+              <input type="checkbox" name="travelhelp" id="wheelchair" value="wheelchair" />
               <label for="wheelchair">Rullstol</label>
               <br />
               <input type="checkbox" name="travelhelp" id="pet" value="pet" />
@@ -123,22 +110,10 @@
             <br />
             <fieldset>
               <legend>Boka en retur resa?</legend>
-<!-- Simpel JS kod för att visa/dölja fält -->
-              <input
-                type="radio"
-                name="returresa"
-                onclick="show();"
-                value="yes"
-                id="yesreturn"
-              />
+              <!-- Simpel JS kod för att visa/dölja fält -->
+              <input type="radio" name="returresa" onclick="show();" value="yes" id="yesreturn" />
               <label for="yesreturn">Ja</label>
-              <input
-                type="radio"
-                name="returresa"
-                onclick="hide();"
-                value="no"
-                id="noreturn"
-              />
+              <input type="radio" name="returresa" onclick="hide();" value="no" id="noreturn" />
               <label for="noreturn">Nej</label>
 
               <!-- DIV FOR RETUR RESA - SHOW / HIDE -->
@@ -155,23 +130,13 @@
               <br /><br />
             </fieldset>
 
-            <label class="labelstyle" for="generalinfo"
-              >Övring upplysning?</label
-            >
+            <label class="labelstyle" for="generalinfo">Övring upplysning?</label>
 
-            <textarea
-              id="generalinfo"
-              name=""
-              id=""
-              cols="20"
-              rows="5"
-            ></textarea>
+            <textarea id="generalinfo" name="generalinfo" cols="20" rows="5"></textarea>
 
             <br />
             <br />
-            <label class="labelstyle" for="repatedresa"
-              >Återkommande resa?</label
-            >
+            <label class="labelstyle" for="repatedresa">Återkommande resa?</label>
             <br />
             <select name="repatedresa" id="repatedresa">
               <option value="nej">Nej</option>
@@ -187,48 +152,52 @@
           </div>
         </div>
       </div>
-      <!-- END OF MAIN CONTAINER -->
 
-      <!-- PAGE MAIN CONTENT END HERE -->
     </div>
-    <!-- MAIN DIV ENDING FOR PAGE SECTIONENING -->
+    <!-- END OF MAIN CONTAINER -->
 
-    <footer>
-      <div class="img_footer">
-        <img
-          src="media/malmo_bot_logo.png"
-          alt="Malmo stads logga - botten av sidan"
-        />
-      </div>
-      <!--  -->
-      <div>
-        Kontakta oss
-        <br />
-        Telefon: 0700 100 100
-        <br />
-        Postadress: Malmö stad
-        <br />
-        205 80 Malmö
-      </div>
+    <!-- PAGE MAIN CONTENT END HERE -->
+  </div>
+  <!-- MAIN DIV ENDING FOR PAGE SECTIONENING -->
 
-      <div>
-        Öppettider
-        <br />
-        Måndag - Fredag : 06 - 22
-        <br />
-        Helg : 12 - 18
-      </div>
-    </footer>
+  <footer>
+    <div class="img_footer">
+      <img src="media/malmo_bot_logo.png" alt="Malmo stads logga - botten av sidan" />
+    </div>
+    <!--  -->
+    <div>
+      Kontakta oss
+      <br />
+      Telefon: 0700 100 100
+      <br />
+      Postadress: Malmö stad
+      <br />
+      205 80 Malmö
+    </div>
 
-    <script>
-      function hide() {
-        document.getElementById("returresa-radio-container").style.display =
-          "none";
-      }
-      function show() {
-        document.getElementById("returresa-radio-container").style.display =
-          "block";
-      }
-    </script>
-  </body>
+    <div>
+      Öppettider
+      <br />
+      Måndag - Fredag : 06 - 22
+      <br />
+      Helg : 12 - 18
+    </div>
+    <div>
+      <a href="synpunkter.html"> Tillgänglighetsredogörelse </a>
+
+    </div>
+  </footer>
+
+  <script>
+    function hide() {
+      document.getElementById("returresa-radio-container").style.display =
+        "none";
+    }
+    function show() {
+      document.getElementById("returresa-radio-container").style.display =
+        "block";
+    }
+  </script>
+</body>
+
 </html>

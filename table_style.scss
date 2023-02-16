@@ -49,6 +49,10 @@
     all: unset;
     cursor: pointer;
   }
+
+  .deletebtn {
+    color: red;
+  }
 }
 
 @media (max-width: 900px) {
